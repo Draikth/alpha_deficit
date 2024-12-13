@@ -110,12 +110,12 @@ a.secondary {
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
+  a .primary:hover {
     background: var(--button-primary-hover);
     border-color: transparent;
   }
 
-  a.secondary:hover {
+  a .secondary:hover {
     background: var(--button-secondary-hover);
     border-color: transparent;
   }
@@ -150,7 +150,7 @@ a.secondary {
     padding: 0 16px;
   }
 
-  a.secondary {
+  a .secondary {
     min-width: auto;
   }
 
