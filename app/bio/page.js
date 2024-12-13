@@ -6,7 +6,7 @@ export const metadata = {
 export default function BioPage() {
   return (
     <div>
-      <h1>About Us</h1>
+      <h1>The Band</h1>
       <br />
       <div>
         <h2>Place holder for picture</h2>

@@ -4,8 +4,9 @@ export default function Home() {
       <h1>Alpha Deficit</h1>
       <div>
         <main>
+          <h2>Welcome to Alpha Deficit</h2>
           <div>
-            <div>place golder for landing page image</div>
+            <div>place holder for landing page image</div>
           </div>
         </main>
       </div>
