@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Play/Sing/Watch Along',
-  description: 'Alpha Deficit Band Page',
+  description: 'Alpha Defizit Band Page',
 };
 
 export default function FunPage() {

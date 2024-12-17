@@ -14,10 +14,10 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Alpha Deficit',
-    template: '%s | Alpha Deficit',
+    default: 'Alpha Dezicit',
+    template: '%s | Alpha Defizit',
   },
-  description: 'Alpha Deficit Band Page',
+  description: 'Alpha Defizit Band Page',
 };
 
 export default function RootLayout({
