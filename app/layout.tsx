@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
-import Link from 'next/link';
+import Navbar from './nav-menu/navbar';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -30,16 +30,19 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <header>
-          <nav>
-            <div>
-              <Link href="/">Home</Link>
-              <Link href="/bio">Bio</Link>
-              <Link href="/media">Media</Link>
-              <Link href="/shows">Shows</Link>
-              <Link href="/merch">Merch</Link>
-              <Link href="/media">Contact</Link>
-            </div>
-          </nav>
+          <div>
+            {/* <nav>
+              <div>
+                <Link href="/">Home</Link>
+                <Link href="/bio">Bio</Link>
+                <Link href="/media">Media</Link>
+                <Link href="/shows">Shows</Link>
+                <Link href="/merch">Merch</Link>
+                <Link href="/media">Contact</Link>
+              </div>
+            </nav> */}
+            <Navbar />
+          </div>
         </header>
         {children}
         <footer>Copyright © 2024 Alpha Defizit</footer>
