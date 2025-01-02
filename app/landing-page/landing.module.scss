@@ -1,0 +1,38 @@
+.landingPage {
+  display: flex;
+  gap: 0.5rem;
+
+  .main {
+    border: 1px solid black;
+    flex: 2;
+  }
+
+  .sidebar {
+    border: 1px solid black;
+    flex: 1;
+    padding: 1rem;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}
+
+// NewsCard styling
+.newsCard {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+}
