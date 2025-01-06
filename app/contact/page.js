@@ -20,6 +20,7 @@ export default function ContactUSPage() {
         <h2>Or Check Out Our Socials!</h2>
         <div>Social network links go here</div>
       </div>
+      <br />
     </div>
   );
 }

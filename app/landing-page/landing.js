@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './landing.module.scss';
 import NewsCard from './NewsCard';
 
@@ -31,7 +32,10 @@ export default function LandingPage() {
           </main>
         </div>
         <div className={styles.sidebar}>
-          <h2>News</h2>
+          <Link href="/news" className="nav-link">
+            <h2>News</h2>
+          </Link>
+
           <section>
             {newsArticles.map((article) => (
               <NewsCard

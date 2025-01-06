@@ -45,6 +45,7 @@ export default function RootLayout({
           </div>
         </header>
         {children}
+        <br />
         <footer>Copyright © 2024 Alpha Defizit</footer>
       </body>
     </html>
