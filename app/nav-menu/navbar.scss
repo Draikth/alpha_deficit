@@ -1,12 +1,11 @@
 @use 'sass:color';
 
-// Variables for reusability
+// Variables for styling
 $navbar-bg: #333;
 $navbar-text-color: #fff;
 $link-hover-bg: #555;
-$border-color: #444;
 
-//Navbar styles
+// Navbar Styles
 .navbar {
   background-color: $navbar-bg;
   color: $navbar-text-color;
@@ -34,20 +33,19 @@ $border-color: #444;
     color: $navbar-text-color;
     font-size: 1.5rem;
     cursor: pointer;
-    display: block;
 
     &:hover {
       color: color.adjust($navbar-text-color, $lightness: 10%);
     }
+
+    // Hide menu button on large screens
+    @media (min-width: 769px) {
+      display: none; // Hide on larger screens
+    }
   }
 
   .menu-links {
-    display: none;
-    gap: 1rem;
-
-    &.show {
-      display: flex;
-    }
+    display: none; // Hidden by default for small screens
 
     .nav-link {
       text-decoration: none;
@@ -59,42 +57,40 @@ $border-color: #444;
         border-radius: 4px;
       }
     }
-  }
-}
 
-// Responsive
-
-@media (max-width: 768px) {
-  .menu-links {
-    flex-direction: column; // stack links vertically
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: $navbar-bg;
-    padding: 1rem;
-    z-index: 1000;
-    border-top: 1px solid $border-color;
-
-    .nav-link {
-      padding: 1rem 0;
-      border-bottom: 1px solid $border-color;
-
-      &:last-child {
-        border-bottom: none; // no border on last link
-      }
+    // Show links in horizontal row on large screens
+    @media (min-width: 769px) {
+      display: flex; // Always visible on larger screens
+      flex-direction: row; // Arrange links in a horizontal row
+      gap: 1rem; // Add spacing between links
     }
   }
-}
 
-@media (min-width: 769px) {
-  .menu-links {
-    display: none;
-    flex-direction: row;
-    gap: 1rem;
+  // Responsive Styles for small screens
+  @media (max-width: 768px) {
+    .menu-links {
+      flex-direction: column; // Stack links vertically
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: $navbar-bg;
+      padding: 1rem;
+      z-index: 1000;
 
-    &.show {
-      display: flex;
+      // Visible when toggled
+      &.show {
+        display: flex; // Show links on small screens when toggled
+      }
+
+      .nav-link {
+        padding: 1rem 0;
+        border-bottom: 1px solid color.scale($navbar-bg, $lightness: -10%);
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
     }
   }
 }

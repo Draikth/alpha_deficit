@@ -8,7 +8,7 @@ export default function SoundCloudEmbed() {
       scrolling="no"
       frameBorder="no"
       allow="autoplay"
-      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/sc-playlists-eumon/sets/synth-city&color=%233f9bfa&auto_play=false&hide_related=true"
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/alpha-defizit/fbd5cee0-245f-41bf-a14d-f0b04419c264&color=%233f9bfa&auto_play=false&hide_related=true"
       title="SoundCloud Player"
     />
   );
